@@ -1,5 +1,11 @@
+.jumbotron{
+    background-color: black;
+}
+
 .jumbo-text{
     text-align: center;
+    color: white;
+    
 }
 
 .panel.panel-primary{
@@ -12,5 +18,5 @@
     border-width: 1px;
     background-color: royalblue;
     color: white;
-    
+
 }
