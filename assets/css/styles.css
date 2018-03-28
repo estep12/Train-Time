@@ -8,15 +8,19 @@
     
 }
 
-.panel.panel-primary{
+.panel{
     border: solid;
     border-width: 1px;
+    border-color: steelblue;
 }
 
 .panel-heading{
-    border: solid;
-    border-width: 1px;
-    background-color: royalblue;
+   
+    background-color: steelblue;
     color: white;
 
+}
+
+#submition{
+    margin-bottom: 10px;
 }
