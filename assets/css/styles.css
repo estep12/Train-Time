@@ -1,0 +1,16 @@
+.jumbo-text{
+    text-align: center;
+}
+
+.panel.panel-primary{
+    border: solid;
+    border-width: 1px;
+}
+
+.panel-heading{
+    border: solid;
+    border-width: 1px;
+    background-color: royalblue;
+    color: white;
+    
+}
