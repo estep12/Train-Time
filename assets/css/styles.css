@@ -12,13 +12,19 @@
     border: solid;
     border-width: 1px;
     border-color: steelblue;
+    border-radius: 5px;
 }
 
 .panel-heading{
    
     background-color: steelblue;
     color: white;
+    padding: 5px;
 
+}
+
+.panel-body{
+    padding: 15px;
 }
 
 #submition{
