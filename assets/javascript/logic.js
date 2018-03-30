@@ -18,7 +18,7 @@
 
     var trainName = $("#train-name").val().trim();
     var trainDest = $("#destination").val().trim();
-    var trainTime = moment($("#train-time").val().trim(), "hh:mm").format("HH:mm");
+    var trainTime = moment($("#train-time").val().trim(), "HH:mm").format("HH:mm");
     var trainFreq = $("#freq").val().trim();
 
   
@@ -60,8 +60,11 @@ console.log(trainDest);
 console.log(trainTime);
 console.log(trainFreq);
 
+var current = moment().format("h:mm a")
+var nextArrival = trainFreq + current
+console.log(nextArrival);
 
-$(".table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" + trainFreq + "</td></tr>")
+$(".table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" + trainFreq + "</td><td>" + nextArrival + "</td></tr>")
 });
 
 
