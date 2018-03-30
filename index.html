@@ -19,6 +19,9 @@
     <!--Firebase ref-->
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
+    <!--moment.js-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     
 </head>
 <body>
@@ -46,6 +49,9 @@
                         <th>Minutes Away</th>
                     </tr>
                 </thead>
+                <tbody>
+
+                </tbody>
             </table>
         </div>
     </div>
@@ -59,20 +65,20 @@
         <div class="panel-body">
             <form>
                 <div class="form-group">
-                    <label for="train-name">Train Name</label>
+                    <label for="train-name-input">Train Name</label>
                     <input type="text" class="form-control" id="train-name">
             
                 </div>
                 <div class="form-group">
-                  <label for="destination">Destination</label>
+                  <label for="destination-input">Destination</label>
                   <input type="text" class="form-control" id="destination">
                 </div>
                 <div class="form-group">
-                    <label for="train-time">First Train Time (HH:mm - military time)</label>
+                    <label for="train-time-input">First Train Time (HH:mm - military time)</label>
                     <input type="text" class="form-control" id="train-time" >
                 </div>
                 <div class="form-group">
-                    <label for="freq">Frequency (min)</label>
+                    <label for="freq-input">Frequency (min)</label>
                     <input type="text" class="form-control" id="freq" >
                 </div>
                         
