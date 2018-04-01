@@ -60,11 +60,24 @@ console.log(trainDest);
 console.log(trainTime);
 console.log(trainFreq);
 
-var current = moment().format("h:mm a")
-var nextArrival = trainFreq + current
-console.log(nextArrival);
+var convertedDate = moment(trainTime, "hh:mm").subtract(1, "years");
+var newTrainTime = moment(convertedDate).format("HH:mm");
+var current = moment();
+var anotherConversion = moment(newTrainTime, "hh:mm").subtract(1, "years");
+var diffTime = moment().diff(moment(anotherConversion), "minutes");
+var remainder = diffTime % trainFreq;
+var minutesAway = trainFreq - remainder;
+var nextArrival = moment().add(minutesAway, 'minutes').format('h:mm a')
+// var nextArrival = trainFreq + current
+// console.log(nextArrival);
 
-$(".table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" + trainFreq + "</td><td>" + nextArrival + "</td></tr>")
+$(".table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" + trainFreq + "</td><td>" + nextArrival + "</td><td>" + minutesAway + "</td></tr>")
 });
+
+setInterval(function(){
+    location.reload();
+  }, 60000)
+
+  
 
 
